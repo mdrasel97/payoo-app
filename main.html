@@ -33,59 +33,96 @@
     <!-- card container  -->
      <div class="grid grid-cols-3 gap-2 mt-5">
         <!-- card  1-->
-         <div class="p-6 border-2 border-sky-500 rounded-md"> 
+         <div id="add-money" class="p-6 border-2 border-sky-500 rounded-md"> 
             <img class="mx-auto space-y-5" src="./assets/wallet1.png" alt="">
             <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Add Money</h2>
          </div>
         <!-- card  2-->
-         <div class="p-6 border-2 border-sky-500 rounded-md"> 
+         <div id="cash-out" class="p-6 border-2 border-sky-500 rounded-md"> 
             <img class="mx-auto space-y-5" src="./assets/send1.png" alt="">
-            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Add Money</h2>
+            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Cashout</h2>
          </div>
         <!-- card  3-->
          <div class="p-6 border-2 border-sky-500 rounded-md"> 
             <img class="mx-auto space-y-5" src="./assets/money1.png" alt="">
-            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Add Money</h2>
+            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Transfer Money</h2>
          </div>
      </div>
     <!-- card container  -->
      <div class="grid grid-cols-3 gap-2 mt-5">
-        <!-- card  1-->
+        <!-- card  4-->
          <div class="p-6 border-2 border-sky-500 rounded-md"> 
             <img class="mx-auto space-y-5" src="./assets/wallet1.png" alt="">
-            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Add Money</h2>
+            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Get Bonus</h2>
          </div>
-        <!-- card  2-->
+        <!-- card  5-->
          <div class="p-6 border-2 border-sky-500 rounded-md"> 
             <img class="mx-auto space-y-5" src="./assets/wallet1.png" alt="">
-            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Add Money</h2>
+            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Pay Bill</h2>
          </div>
-        <!-- card  3-->
+        <!-- card  6-->
          <div class="p-6 border-2 border-sky-500 rounded-md"> 
             <img class="mx-auto space-y-5" src="./assets/wallet1.png" alt="">
-            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Add Money</h2>
+            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Transactions</h2>
          </div>
      </div> 
 
      <!-- add money  -->
-      <div>
-        <h2 class="text-2xl font-bold mt-7">Add Money</h2>
+     <section id="add-money-box">
+        <div>
+            <h2 class="text-2xl font-bold mt-7">Add Money</h2>
+            <div class="mt-5">
+                <div class="">
+                  <div  class="card bg-base-50 w-full max-w-sm shrink-0 shadow-2xl mx-auto">
+                    <form class="card-body">
+                        <label class="label">
+                            <span class="label-text font-bold">Select A Bank</span>
+                          </label>
+                        <select id="" class="select select-bordered w-full max-w-xs re">
+                            <option disabled selected>Select back</option>
+                            <option>Bkash</option>
+                            <option>Nagad</option>
+                            <option>Roket</option>
+                            <option>Upay</option>
+                            <option>UCB</option>
+                            <option>DBBL</option>
+                          </select>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold">Bank Account Number</span>
+                        </label>
+                        <input id="mobile-number" value="01830244297" type="number" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold">Amount to Add</span>
+                        </label>
+                        <input id="add-amount" type="text" placeholder="Add Amount to withdraw" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold">4 Digit Pin</span>
+                        </label>
+                        <input id="add-money-pin" value="1234" type="text" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="btn-add-money" class="btn font-bold text-white text-lg btn-color bg-primary">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+     </section>
+   
+   <!-- cash out  -->
+   <section id="cashout">
+    <div>
+        <h2 class="text-2xl font-bold mt-7">Cash out</h2>
         <div class="mt-5">
             <div class="">
               <div class="card bg-base-50 w-full max-w-sm shrink-0 shadow-2xl mx-auto">
                 <form class="card-body">
-                    <label class="label">
-                        <span class="label-text font-bold">Select A Bank</span>
-                      </label>
-                    <select class="select select-bordered w-full max-w-xs">
-                        <option disabled selected>Select back</option>
-                        <option>Bkash</option>
-                        <option>Nagad</option>
-                        <option>Roket</option>
-                        <option>Upay</option>
-                        <option>UCB</option>
-                        <option>DBBL</option>
-                      </select>
                   <div class="form-control">
                     <label class="label">
                       <span class="label-text font-bold">Bank Account Number</span>
@@ -105,7 +142,7 @@
                     <input id="add-money-pin" value="1234" type="text" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
                   </div>
                   <div class="form-control mt-6">
-                    <button id="btn-add-money" class="btn font-bold text-white text-lg btn-color bg-primary">Add Money</button>
+                    <button id="btn-add-money" class="btn font-bold text-white text-lg btn-color bg-primary">Withdraw Money</button>
                   </div>
                 </form>
               </div>
@@ -113,7 +150,10 @@
           </div>
       </div>
    </section>
+   
+    </section>
 
    <script src="./js/main.js"></script>
+   <script src="./js/toggle.js"></script>
 </body>
 </html>

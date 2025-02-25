@@ -12,8 +12,9 @@ document
     const convertedMainBalance = parseFloat(mainBalance);
     // console.log(typeof mainBalance)
 
+    
     if (convertedMoneyPin === 1234) {
-      console.log("yesss");
+    //   console.log("yesss");
       const sum = convertedAmount + convertedMainBalance;
       document.getElementById("main-balance").innerText = sum;
     } else {
