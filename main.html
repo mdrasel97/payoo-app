@@ -8,8 +8,110 @@
     <!-- daisyUI cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-   
+<body class="bg-slate-800">
+   <section class="max-w-md min-h-screen mx-auto bg-gray-200 px-6">
+    <!-- header container -->
+    <div class="flex items-center justify-between py-5">
+        <!-- header left site container-->
+         <div class="flex items-center gap-2">
+            <img class="w-14" src="./assets/Group.png" alt="">
+            <!-- left site  -->
+            <div>
+                <h2 class="text-3xl font-bold">$<span>45000</span></h2>
+                <p>Available Balance</p>
+            </div>
+         </div>
+         <!-- header right site  -->
+          <div class="btn">Log Out <i class="fa-solid fa-right-from-bracket"></i></div>
+    </div>
+    <h1 class="text-3xl font-bold mt-9">🔥 Welcome to Payooo!</h1>
+    <p class="mt-4 text-gray-500">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+
+    <!-- card container  -->
+     <div class="grid grid-cols-3 gap-2 mt-5">
+        <!-- card  1-->
+         <div class="p-6 border-2 border-sky-500 rounded-md"> 
+            <img class="mx-auto space-y-5" src="./assets/wallet1.png" alt="">
+            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Add Money</h2>
+         </div>
+        <!-- card  2-->
+         <div class="p-6 border-2 border-sky-500 rounded-md"> 
+            <img class="mx-auto space-y-5" src="./assets/send1.png" alt="">
+            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Add Money</h2>
+         </div>
+        <!-- card  3-->
+         <div class="p-6 border-2 border-sky-500 rounded-md"> 
+            <img class="mx-auto space-y-5" src="./assets/money1.png" alt="">
+            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Add Money</h2>
+         </div>
+     </div>
+    <!-- card container  -->
+     <div class="grid grid-cols-3 gap-2 mt-5">
+        <!-- card  1-->
+         <div class="p-6 border-2 border-sky-500 rounded-md"> 
+            <img class="mx-auto space-y-5" src="./assets/wallet1.png" alt="">
+            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Add Money</h2>
+         </div>
+        <!-- card  2-->
+         <div class="p-6 border-2 border-sky-500 rounded-md"> 
+            <img class="mx-auto space-y-5" src="./assets/wallet1.png" alt="">
+            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Add Money</h2>
+         </div>
+        <!-- card  3-->
+         <div class="p-6 border-2 border-sky-500 rounded-md"> 
+            <img class="mx-auto space-y-5" src="./assets/wallet1.png" alt="">
+            <h2 class="text-center text-sm space-y-4 font-semibold hover:text-sky-600">Add Money</h2>
+         </div>
+     </div> 
+
+     <!-- add money  -->
+      <div>
+        <h2 class="text-2xl font-bold mt-7">Add Money</h2>
+        <div class="mt-5">
+            <div class="">
+              <div class="card bg-base-50 w-full max-w-sm shrink-0 shadow-2xl mx-auto">
+                <form class="card-body">
+                    <label class="label">
+                        <span class="label-text font-bold">Select A Bank</span>
+                      </label>
+                    <select class="select select-bordered w-full max-w-xs">
+                        <option disabled selected>Select back</option>
+                        <option>Bkash</option>
+                        <option>Nagad</option>
+                        <option>Roket</option>
+                        <option>Upay</option>
+                        <option>UCB</option>
+                        <option>DBBL</option>
+                      </select>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold">Bank Account Number</span>
+                    </label>
+                    <input id="mobile-number" value="01830244297" type="number" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold">Amount to Add</span>
+                    </label>
+                    <input id="pin" type="text" placeholder="Add Amount to withdraw" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold">4 Digit Pin</span>
+                    </label>
+                    <input id="pin" value="1234" type="text" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-login" class="btn font-bold text-white text-lg btn-color bg-primary">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+   </section>
 </body>
 </html>
