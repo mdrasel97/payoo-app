@@ -8,6 +8,12 @@
     <!-- daisyUI cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .btn-color{
+        background: rgb(8, 116, 242);
+      }
+    </style>
 </head>
 <body class="bg-slate-800">
 
@@ -38,9 +44,23 @@
             </label>
             <input id="pin" value="1234" type="text" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
           </div>
-          <div class="form-control mt-6">
-            <button id="btn-login" class="btn btn-primary font-bold text-white text-lg">Login</button>
+          <div class="flex justify-between">
+            <div class="form-control">
+              <label class="label cursor-pointer space-x-2">
+                <input type="checkbox" checked="checked" class="checkbox" />
+                <span class="label-text">Remember me</span>
+              </label>
+            </div>
+            <label class="label">
+              <a href="#" class="label-text-alt link link-hover">Register</a>
+            </label>
           </div>
+          <div class="form-control mt-6">
+            <button id="btn-login" class="btn font-bold text-white text-lg btn-color">Login</button>
+          </div>
+          <label class="label mx-auto">
+            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+          </label>
         </form>
       </div>
     </div>
