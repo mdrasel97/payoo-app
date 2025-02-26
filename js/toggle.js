@@ -2,7 +2,8 @@
 document.getElementById('add-money-box').style.display = 'block';
 document.getElementById('cashout').style.display = 'none';
 document.getElementById('add-money')
-.addEventListener('click', function(){
+.addEventListener('click', function(event){
+    event.preventDefault();
     console.log('okkkk')
     document.getElementById('add-money-box').style.display = 'block';
     document.getElementById('cashout').style.display = 'none';
